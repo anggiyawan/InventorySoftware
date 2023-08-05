@@ -97,3 +97,68 @@
 .icon-fitcolumn{
 	background:url('icons/fit-column.png') no-repeat center center;
 }
+.circle {
+     border-radius: 80%;
+     width: 9px;
+     height: 9px;
+}
+.red {
+	width: 9px;
+	height: 9px;
+	background-image: -moz-radial-gradient(12px 12px 35deg, circle cover, #93291E 0%, #fff 10%, #ED213A 95%);
+	background-image: -webkit-radial-gradient(12px 12px, circle cover, #93291E, #ED213A);
+	background-image: radial-gradient(12px 12px 35deg, circle cover, #93291E 10%, ##93291E 100%, #ED213A 95%);
+	text-align: left;
+	display : inline-block;
+	margin : 0px auto;
+}
+ .green {
+     width: 9px;
+     height: 9px;
+     background-image: -moz-radial-gradient(12px 12px 35deg, circle cover, #38ef7d 0%, #fff 10%, #1D976C 95%);
+     background-image: -webkit-radial-gradient(12px 12px, circle cover, #38ef7d, #1D976C);
+     background-image: radial-gradient(12px 12px 35deg, circle cover, #38ef7d 10%, ##38ef7d 100%, #1D976C 95%);
+     text-align: left;
+     display: inline-block;
+     margin: 0px auto;
+}
+ .blue {
+     width: 9px;
+     height: 9px;
+     background-image: -moz-radial-gradient(12px 12px 35deg, circle cover, yellow 0%, #0575E6 10%, #2948ff 95%);
+     background-image: -webkit-radial-gradient(12px 12px, circle cover, #56CCF2, #2948ff);
+     background-image: radial-gradient(12px 12px 35deg, circle cover, #4E31AA 10%, #2948ff 100%, #2948ff 95%);
+     text-align: left;
+     display: inline-block;
+     margin: 0px auto;
+}
+ .orange {
+     width: 9px;
+     height: 9px;
+     background-image: -moz-radial-gradient(12px 12px 35deg, circle cover, #eea849 0%, #eea849 10%, #f46b45 95%);
+     background-image: -webkit-radial-gradient(12px 12px, circle cover, #eea849, #f46b45);
+     background-image: radial-gradient(12px 12px 35deg, circle cover, #eea849 10%, #eea849 100%, #f46b45 95%);
+     text-align: left;
+     display: inline-block;
+     margin: 0px auto;
+}
+ .grey {
+     width: 9px;
+     height: 9px;
+     background-image: -moz-radial-gradient(12px 12px 35deg, circle cover, #141E30 0%, #141E30 10%, #243B55 95%);
+     background-image: -webkit-radial-gradient(12px 12px, circle cover, grey, #243B55);
+     background-image: radial-gradient(12px 12px 35deg, circle cover, #141E30 10%, #141E30 100%, #243B55 95%);
+     text-align: left;
+     display: inline-block;
+     margin: 0px auto;
+}
+ .purple {
+     width: 9px;
+     height: 9px;
+     background-image: -moz-radial-gradient(12px 12px 35deg, circle cover, #8E2DE2 0%, #8E2DE2 10%, #4A00E0 95%);
+     background-image: -webkit-radial-gradient(12px 12px, circle cover, #fff, #4A00E0 100%);
+     background-image: radial-gradient(12px 12px 35deg, circle cover, #8E2DE2 10%, #4A00E0 100%, #4A00E0 95%);
+     text-align: left;
+     display: inline-block;
+     margin: 0px auto;
+}
