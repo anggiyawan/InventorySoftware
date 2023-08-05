@@ -1,0 +1,369 @@
+html, body
+{
+	margin: 0;
+	font-family: verdana, arial;
+	background: #ffffff;
+}
+body, tbody
+{
+	color: #000000;
+	font-size: 12px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#Table
+{
+	font-size: 11px;
+}
+
+#Table a
+{
+text-decoration:none;
+color:#0000FF;
+background-color:#FFFFFF;
+}
+#Table a:hover, #Table a:active
+{
+font-size:16px;
+}
+.RackHd
+{
+background-image:url(../Images/greyBar.gif);
+width:100%;
+height:30px;
+font-size:12px;
+font-weight:bold;
+color:#000000;
+}
+.RPHeader {
+	color: #000000;
+	background-color: #A5C3ED;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-position: center center;
+	text-align: center;
+}
+
+.void {
+	color: #FF0000;
+	text-decoration: underline blink;
+}
+
+.RPFooter {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #dddddd;
+	font-size: 10px;
+	color: #5681a9;
+}
+
+.RPDetail {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #eeeeee;
+}
+.RPDetailW {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #ffffff;
+}
+.MainTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.Title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+}
+.ErrorStyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #1a1a1a;
+	font-weight:bolder;
+	padding-left :10pt;
+}
+.PageHeader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	color: #000099;
+}
+#menu
+{
+	/* wd */
+	/*background: url("../img/menu_line_plain.gif"/*tpa=http://www.depkominfo.go.id/img/menu_line_plain.gif*/);*/
+	width: 148px;
+	height: 22px;
+	margin: 0 0 0 0; 
+	padding: 1px 0 0 15px;
+}
+#menu a
+{
+	color: #006699;
+	font-weight: normal;
+}
+
+#menu a:hover, #menu a:active
+{
+	color: #f06600;
+	font-weight: normal;
+	width: 100%;
+	height: 12px;
+	margin: 0; padding: 0px;
+}
+
+a
+{
+	text-decoration: none;
+	color: #006699;
+}
+a:hover
+{
+	color: #f06600;
+}
+
+a.sub-direktori
+{
+	color: #000000;
+	font-weight: normal;
+	font-size: 100%;	
+	font-family: verdana;			
+}.IconDesc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #1a1a1a;
+}
+.IconTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+}
+.IconTitleSmall {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: none;
+	color: #f06600;
+}
+.header {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(../Images/Tableslice.gif);
+	text-align: center;
+	color: #FFFFFF;
+}
+.footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000066;
+	background-color: #ADB2DB;
+	border-top: 1px solid #000000;
+	border-right: 2px none #ADB2DB;
+	border-bottom: 2px none #ADB2DB;
+	border-left: 2px none #ADB2DB;
+}
+.headerEDA {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #000066;
+	text-align: center;
+	color: #FFFFFF;
+}
+.Copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.Red_Background {
+	color: #FFFFFF;
+	background-color: #1a1a1a;
+}
+.PurpleButton {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background: #663399;
+	height: 27px;
+	font-size: 12px; 
+	margin: 2px 2px 2px 2px;
+	border: 1px solid #051409;
+}
+.BlueButton {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	background: #dddddd;
+	height: 27px;
+	font-size: 12px; 
+	margin: 2px 0px 2px 0px;
+	border: 1px solid #051409;
+}
+.GreenButton {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #101010;
+	background-image:url(../img/tombol.jpg);
+	height: 25px;
+	font-size: 12px; 
+	margin: 2px 0px 2px 0px;
+	border: 1px solid #051409;
+}
+.GreyButton {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #101010;
+	background: #dddddd;
+	height: 25px;
+	font-size: 12px; 
+	margin: 2px 0px 2px 0px;
+	border: 1px solid #051409;
+}
+.HeadTable {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #101010;
+	background-color: #A5C3ED;
+	height: 25px;
+	font-size: 12px; 
+	margin: 2px 0px 2px 0px;
+	border: 0px solid #051409;
+}
+.RedButton {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background: #7cba3e;	
+	height: 25px;
+	font-size: 12px; 
+	margin: 2px 2px 2px 2px;
+	border: 1px solid #051409;
+}
+
+.SmallButton {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	background: #dddddd;
+	height: 23px;
+	font-size: 12px; 
+	margin: 0px 0px 0px 0px;
+	border: 1px solid #051409;
+}
+.table1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000066;
+	background-color: #ffffff;
+	border-top: 1px solid #c5ced7;
+	border-right: 1px solid #c5ced7;
+	border-bottom: 1px solid #c5ced7;
+	border-left: 1px solid #c5ced7;
+}
+.bluetextbox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000066;
+	background-color: #afcee6;
+	border-top: 1px solid #8dafce;
+	border-right: 1px solid #8dafce;
+	border-bottom: 1px solid #8dafce;
+	border-left: 1px solid #8dafce;
+}
+.logintextbox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #000066;
+	background-color: #afcee6;
+	border-top: 1px solid #8dafce;
+	border-right: 1px solid #8dafce;
+	border-bottom: 1px solid #8dafce;
+	border-left: 1px solid #8dafce;
+}
+
+.FRMHeader {
+	color: #ffffff;
+	background-color: #A5C3ED;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-position: left left;
+	text-align: left;
+}
+.FRMDetail {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #eeeeee;
+}
+.LinkButton {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ff0000;
+	height: 15px;
+	font-size: 10px; 
+	text-decoration: underline;
+	margin: 0px 0px 0px 0px;
+	border: 0px solid #051409;
+}
+.IconTitleBox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: none;
+	color: #ffffff;
+	padding-top:4pt;
+	padding-bottom:4pt;
+	vertical-align: top;
+}
+.dtable {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+tbody {
+  color: #000;
+}
+.dtable th, dtable td {
+  padding: 2px 3px;
+  border: 1px solid #EEF7FB;
+}
+.dtable tr {
+  font: normal 11px Tahoma, Geneva, sans-serif;
+  background: #EDEDED;
+}
+.dtable td {
+  -webkit-transition: all 0.7s ease-in-out 0s;
+  -moz-transition: all 0.7s ease-in-out 0s;
+  -o-transition: all 0.7s ease-in-out 0s;
+  transition: all 0.7s ease-in-out 0s;
+}
+.dtable tr:nth-child(2n+0) {
+  background: #eeeeee;
+}
+.dtable td:hover, dtable td:nth-child(2n+0):hover {
+  background: #EEF7FB;
+}
+.dtable th {
+  background: #3EA4D0;
+  color: #DAEEF6;
+  /*text-shadow: 1px 1px 0 #1F627F;*/
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10), 0 0 100px rgba(0, 0, 0, 0.15) inset;
+  /*font: bold 16px Arial, Helvetica, sans-serif;*/
+  font: 11px Arial, Helvetica, sans-serif;
+}
+.dtable2 {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+tbody {
+  color: #000;
+}
+.dtable2 th, dtable2 td {
+  padding: 0px 0px;
+  border: 0px solid #EEF7FB;
+}
+.dtable2 tr {
+  font: normal 11px Tahoma, Geneva, sans-serif;
+  background: #EDEDED;
+}
+.dtable2 th {
+  background: #EDEDED;
+  color: #1a1a1a;
+  /*text-shadow: 1px 1px 0 #1F627F;*/
+  /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10), 0 0 100px rgba(0, 0, 0, 0.15) inset;*/
+  /*font: bold 16px Arial, Helvetica, sans-serif;*/
+  font: 11px Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,111 @@
+<?php
+
+namespace App\Database\Seeds;
+
+use CodeIgniter\Database\Seeder;
+
+class GroupsRolesSeeder extends Seeder
+{
+    public function run()
+    {
+        $data = [
+            [
+                'groupRolesId'	=> 100001,
+				'groupId'		=> 100001,
+				'menuId'		=> 100001,
+				'view'			=> 1,
+				'created'		=> 0,
+				'updated'		=> 0,
+				'cancelled'		=> 0,
+				'deleted'		=> 0,
+				'printed'		=> 0,
+				'downloaded'	=> 0,
+				'closed'		=> 0,
+				'verified'		=> 0,
+				'inputBy'		=>  "100001",
+                'inputDate'		=>  date('Y-m-d H:i:s'),
+            ],
+			[
+                'groupRolesId'	=> 100002,
+				'groupId'		=> 100001,
+				'menuId'		=> 100002,
+				'view'			=> 1,
+				'created'		=> 0,
+				'updated'		=> 0,
+				'cancelled'		=> 0,
+				'deleted'		=> 0,
+				'printed'		=> 0,
+				'downloaded'	=> 0,
+				'closed'		=> 0,
+				'verified'		=> 0,
+				'inputBy'		=>  "100001",
+                'inputDate'		=>  date('Y-m-d H:i:s'),
+            ],
+			[
+                'groupRolesId'	=> 100003,
+				'groupId'		=> 100001,
+				'menuId'		=> 100003,
+				'view'			=> 1,
+				'created'		=> 1,
+				'updated'		=> 1,
+				'cancelled'		=> 0,
+				'deleted'		=> 1,
+				'printed'		=> 0,
+				'downloaded'	=> 0,
+				'closed'		=> 0,
+				'verified'		=> 0,
+				'inputBy'		=>  "100001",
+                'inputDate'		=>  date('Y-m-d H:i:s'),
+            ],
+			[
+                'groupRolesId'	=> 100004,
+				'groupId'		=> 100001,
+				'menuId'		=> 100004,
+				'view'			=> 1,
+				'created'		=> 1,
+				'updated'		=> 1,
+				'cancelled'		=> 0,
+				'deleted'		=> 1,
+				'printed'		=> 0,
+				'downloaded'	=> 0,
+				'closed'		=> 0,
+				'verified'		=> 0,
+				'inputBy'		=>  "100001",
+                'inputDate'		=>  date('Y-m-d H:i:s'),
+            ],
+			[
+                'groupRolesId'	=> 100005,
+				'groupId'		=> 100001,
+				'menuId'		=> 100005,
+				'view'			=> 1,
+				'created'		=> 1,
+				'updated'		=> 1,
+				'cancelled'		=> 0,
+				'deleted'		=> 1,
+				'printed'		=> 0,
+				'downloaded'	=> 0,
+				'closed'		=> 0,
+				'verified'		=> 0,
+				'inputBy'		=>  "100001",
+                'inputDate'		=>  date('Y-m-d H:i:s'),
+            ],
+			[
+                'groupRolesId'	=> 100006,
+				'groupId'		=> 100001,
+				'menuId'		=> 100006,
+				'view'			=> 1,
+				'created'		=> 1,
+				'updated'		=> 1,
+				'cancelled'		=> 0,
+				'deleted'		=> 1,
+				'printed'		=> 0,
+				'downloaded'	=> 0,
+				'closed'		=> 0,
+				'verified'		=> 0,
+				'inputBy'		=>  "100001",
+                'inputDate'		=>  date('Y-m-d H:i:s'),
+            ],
+        ];
+        $this->db->table('groups_roles')->insertBatch($data);
+    }
+}

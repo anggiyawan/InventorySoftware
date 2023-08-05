@@ -1,0 +1,141 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Cahaya Management Information System :.</title>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/easyui.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        function CekAktif() {
+            
+           
+ 
+            $('#tt').tabs({
+                border: false,
+                onSelect: function (title) {
+                    sessionStorage.usedData = title;
+                   
+                 //   document.getElementById("btn1").value == title;
+                   // document.getElementById("btn1").click();
+                    
+                }
+            });
+            var ttts = sessionStorage.getItem("usedData");
+            if (ttts == "") {
+                //alert(' kosog is selected');
+            } else {
+                //alert(ttts + ' ada is selected');
+                $('#tt').tabs('select',ttts);
+            }
+
+
+          //  var pp = $('#tt').tabs('getSelected');
+           // var tab = pp.panel('options').tab;    // the corresponding tab object    
+           // alert(tab + ' is selected');
+            //var index = $('#tt').index($('#tt'));
+            //$('#tt').tabs('select', index);
+            //$('#tt').tabs('select', 'QA Utility');
+            //var current_index = $("#tabs").tabs("option", "active");
+            //$("#tabs").tabs('load', current_index);
+            //alert(current_index)
+        }
+   </script>
+
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" class="easyui-layout" onload="CekAktif();" >
+
+
+	<div data-options="region:'north',border:false" style="height:35px;background:#ffffff;padding:0px">
+            <div class="HeaderTopMenu">
+                <div style="background: #3e6db9;padding:10px">
+                     <font color="#ffffff">User ID : IT,</font> &nbsp;
+                     <a href="resetpwd.asp" style="color:#ffffff;">Reset Password</a> &nbsp;
+                     <a href="logout.asp" style="color:#ffffff;">Logout</a>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  </div>
+            </div>
+            <div class="HeaderTopModule"></div>
+            
+    </div>
+
+
+	<div data-options="region:'south',border:false" style="height:50px;background:#ffffff;padding:10px;">PT. Cahaya Jakarta &copy; Juni 2015</div>
+
+	<div data-options="region:'center',title:'CMIS - Cahaya Management Information System'">
+
+	<div id="tt" class="easyui-tabs" style="width:100%;height:100%;" data-options="tabPosition:'left'">
+        
+              <div title="Change Estimates" style="padding:10px">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+	          <tr>
+                <td width="15"  height="25" bgcolor="#3E6DB9">&nbsp;</td>
+                <td colspan="8" class="IconTitleBox"  bgcolor="#3E6DB9"><b>ESTIMATES</b></td>
+                <td width="30%"  bgcolor="#3E6DB9"></td>
+              </tr>
+	          <tr>
+                <td colspan="10" height="6"></td>
+              </tr>
+              <tr>
+                    <td width="15">&nbsp;</td>
+                    <td width="200" class="IconTitle"><a href="data_req_update_CMIS.asp">Change Estimates Request</a></td>
+                    <td width="15" class="IconTitle"></td>
+                    <td width="200" class="IconTitle"></td>
+                    <td width="15" class="IconTitle"></td>
+                    <td width="200" class="IconTitle"></td>
+                    <td width="15">&nbsp;</td>
+                    <td width="200" class="IconTitle"></td>
+                    <td width="15">&nbsp;</td>
+                    <td class="IconTitle"></td>
+              </tr>
+              <tr>
+                    <td height="35">&nbsp;</td>
+                    <td>
+                        <a href="data_req_update_CMIS.asp"><img src="img/csv_db.jpg" border="0" hspace="0" vspace="0" />
+                        </a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td width="200" class="IconTitle"></td>
+                    <td width="15">&nbsp;</td>
+                    <td>&nbsp;</td>
+              </tr>
+              <tr>
+                    <td>&nbsp;</td>
+                    <td class="IconDesc"><a href="data_req_update_CMIS.asp">Change Data Estimates &raquo; </a></td>
+                    <td class="IconDesc"></td>
+                    <td class="IconDesc"></td>
+                    <td class="IconDesc"></td>
+                    <td class="IconDesc" valign="top"></td>
+                    <td class="IconDesc"></td>
+                    <td class="IconDesc"></td>
+                    <td width="15">&nbsp;</td>
+                    <td>&nbsp;</td>
+              </tr>
+
+	          <tr>
+                <td colspan="10" height="6"></td>
+              </tr>
+              </table>
+              </div>
+
+           
+	</div>
+    </div>
+    <form method="post" name="frm" target="_parent" id="frm" >  
+    <input name="btn1" type="submit" id="btn1" value="F Submit " hidden=hidden />
+    </form>
+</body>
+</html>
