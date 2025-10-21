@@ -73,7 +73,7 @@ class AddTableAdjustments extends Migration
         $this->forge->createTable('adjustments');
 		
 		$this->db->query("ALTER TABLE adjustments AUTO_INCREMENT 100001");
-		$this->db->query("CREATE INDEX IDXadjustmentId ON location_transfers(adjustmentId)");
+		$this->db->query("CREATE INDEX IDXadjustmentId ON adjustments(adjustmentId)");
     }
 
     public function down()

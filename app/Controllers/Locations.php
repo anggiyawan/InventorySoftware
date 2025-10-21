@@ -183,7 +183,6 @@ class Locations extends BaseController
 
 			// insert location
 			$paramInsert = array(
-				'locationId'		=> $locationId,
 				'locationName'		=> $this->request->getPost("locationName"),
 				'remark'			=> $this->request->getPost("remark"),
 				'statusId'			=> $this->request->getPost("statusId"),

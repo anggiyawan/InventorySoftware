@@ -11,10 +11,11 @@ class Running extends Seeder
         $this->call('AutoNumberSeeder');
         $this->call('CustomerStatusSeeder');
         $this->call('GroupsSeeder');
-		$this->call('UsersSeeder');
+        $this->call('UsersSeeder');
         $this->call('MenuTypeSeeder');
         $this->call('MenuSeeder');
         $this->call('GroupsRolesSeeder');
         $this->call('PaymentTermsSeeder');
+        $this->call('ProductsSeeder');
     }
 }

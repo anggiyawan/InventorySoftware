@@ -8,32 +8,32 @@ class AddTableDeliveryOrdersDetailsTemp extends Migration
 {
     public function up()
     {
-		$this->forge->addField([
-            'deliveryOrderDetailId'	=> [
+        $this->forge->addField([
+            'deliveryOrderDetailId'    => [
                 'type'           => 'INT',
                 'constraint'     => 11,
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-			'productId'		=> [
+            'productId'        => [
                 'type'           => 'INT',
                 'constraint'     => 11,
                 'unsigned'       => true,
             ],
-			'salesOrderDetailId'	=> [
+            'salesOrderDetailId'    => [
                 'type'           => 'INT',
                 'constraint'     => 11,
                 'unsigned'       => true,
             ],
-			'ordered' => [
+            'ordered' => [
                 'type'           => 'INT',
                 'constraint'     => 11,
             ],
-			'delivered' => [
+            'delivered' => [
                 'type'           => 'INT',
                 'constraint'     => 11,
             ],
-			'quantity' => [
+            'quantity' => [
                 'type'           => 'INT',
                 'constraint'     => 11,
             ],
@@ -41,7 +41,7 @@ class AddTableDeliveryOrdersDetailsTemp extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => '255',
             ],
-			'statusId'       => [
+            'statusId'       => [
                 'type'           => 'VARCHAR',
                 'constraint'     => '100',
             ],
@@ -49,34 +49,34 @@ class AddTableDeliveryOrdersDetailsTemp extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => '12',
             ],
-			'inputDate' => [
+            'inputDate' => [
                 'type'           => 'DATETIME',
                 'null'           => true,
             ],
-			'updateBy' => [
+            'updateBy' => [
                 'type'           => 'VARCHAR',
                 'constraint'     => '12',
             ],
-			'updateDate' => [
+            'updateDate' => [
                 'type'           => 'DATETIME',
                 'null'           => true,
             ],
-			'deleteBy' => [
+            'deleteBy' => [
                 'type'           => 'VARCHAR',
                 'constraint'     => '12',
             ],
-			'deleteDate' => [
+            'deleteDate' => [
                 'type'           => 'DATETIME',
                 'null'           => true,
             ]
         ]);
-		
-		$this->forge->addForeignKey('salesOrderDetailId', 'sales_orders_details', 'salesOrderDetailId');
+
+        $this->forge->addForeignKey('salesOrderDetailId', 'sales_orders_details', 'salesOrderDetailId');
         $this->forge->addPrimaryKey('deliveryOrderDetailId');
         $this->forge->createTable('delivery_orders_details_temp');
-		
-		$this->db->query("ALTER TABLE delivery_orders_details_temp AUTO_INCREMENT 2000000001");
-		$this->db->query("CREATE INDEX IDXpackageDetailsId ON delivery_orders_details_temp(packageDetailId)");
+
+        $this->db->query("ALTER TABLE delivery_orders_details_temp AUTO_INCREMENT 2000000001");
+        $this->db->query("CREATE INDEX IDXpackageDetailsId ON delivery_orders_details_temp(deliveryOrderDetailId)");
     }
 
     public function down()

@@ -110,7 +110,14 @@ class Users extends BaseController
 
 		// $arrayColumn[] = $columns;
 		// return $arrayColumn;
-		$arrayColumn = file(base_url('data.html'));
+		$context  = stream_context_create(array('http' => array('header' => 'Accept: application/json')));
+		$arrContextOptions = array(
+			"ssl" => array(
+				"verify_peer" => false,
+				"verify_peer_name" => false,
+			),
+		);
+		$arrayColumn = file_get_contents(base_url('data.html'), false, stream_context_create($arrContextOptions));
 		return json_decode(trim((($arrayColumn[0])), "\""));
 	}
 

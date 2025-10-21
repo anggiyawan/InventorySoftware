@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/inventorysoftware';
+    public $baseURL = 'http://inventory_software.test';
 
     /**
      * --------------------------------------------------------------------------

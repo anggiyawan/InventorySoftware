@@ -9,28 +9,40 @@ class AddTableLocationStock extends Migration
     public function up()
     {
         $this->forge->addField([
-            'locationStockId'	=> [
+            'locationStockId'    => [
                 'type'           => 'BIGINT',
                 'constraint'     => 11,
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-			'locationId'		=> [
+            'locationId'        => [
                 'type'           => 'INT',
                 'constraint'     => 11,
                 'unsigned'       => true,
             ],
-			'locationName'		=> [
+            'locationName'        => [
                 'type'           => 'INT',
                 'constraint'     => 11,
                 'unsigned'       => true,
             ],
-			'productId'		=> [
+            'productId'        => [
                 'type'           => 'INT',
                 'constraint'     => 11,
                 'unsigned'       => true,
             ],
-			'stock'		=> [
+            'productName'        => [
+                'type'           => 'VARCHAR',
+                'constraint'     => '255',
+            ],
+            'stock'        => [
+                'type'           => 'INT',
+                'constraint'     => 11,
+            ],
+            'stockAcc'        => [
+                'type'           => 'INT',
+                'constraint'     => 11,
+            ],
+            'stockPhy'        => [
                 'type'           => 'INT',
                 'constraint'     => 11,
             ],
@@ -38,7 +50,7 @@ class AddTableLocationStock extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => '255',
             ],
-			'statusId'       => [
+            'statusId'       => [
                 'type'           => 'INT',
                 'constraint'     => 11,
             ],
@@ -46,35 +58,35 @@ class AddTableLocationStock extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => '12',
             ],
-			'inputDate' => [
+            'inputDate' => [
                 'type'           => 'DATETIME',
                 'null'           => true,
             ],
-			'updateBy' => [
+            'updateBy' => [
                 'type'           => 'VARCHAR',
                 'constraint'     => '12',
             ],
-			'updateDate' => [
+            'updateDate' => [
                 'type'           => 'DATETIME',
                 'null'           => true,
             ],
-			'deleteBy' => [
+            'deleteBy' => [
                 'type'           => 'VARCHAR',
                 'constraint'     => '12',
             ],
-			'deleteDate' => [
+            'deleteDate' => [
                 'type'           => 'DATETIME',
                 'null'           => true,
             ]
         ]);
-		
-		$this->forge->addForeignKey('locationId', 'locations', 'locationId');
-		$this->forge->addForeignKey('productId', 'products', 'productId');
+
+        $this->forge->addForeignKey('locationId', 'locations', 'locationId');
+        $this->forge->addForeignKey('productId', 'products', 'productId');
         $this->forge->addPrimaryKey('locationStockId');
         $this->forge->createTable('location_stock');
-		
-		$this->db->query("ALTER TABLE location_stock AUTO_INCREMENT 100001");
-		$this->db->query("ALTER TABLE `location_stock` ADD UNIQUE `unique_index`(`locationId`, `productId`);");
+
+        $this->db->query("ALTER TABLE location_stock AUTO_INCREMENT 100001");
+        $this->db->query("ALTER TABLE `location_stock` ADD UNIQUE `unique_index`(`locationId`, `productId`);");
     }
 
     public function down()
